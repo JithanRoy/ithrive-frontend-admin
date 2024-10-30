@@ -1,0 +1,11 @@
+.GradientTextColor {
+    p {
+        strong {
+            @apply text-white !important;
+        }
+        span {
+            @apply text-white !important;
+        }
+        color: white !important;
+    }
+}

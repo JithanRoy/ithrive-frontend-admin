@@ -1,0 +1,23 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "RMPC629J65.com.stucommunify.app",
+                "paths": [
+                    "/*"
+                ]
+            }
+        ]
+    },
+    "activitycontinuation": {
+        "apps": [
+            "RMPC629J65.com.stucommunify.app"
+        ]
+    },
+    "webcredentials": {
+        "apps": [
+            "RMPC629J65.com.stucommunify.app"
+        ]
+    }
+}

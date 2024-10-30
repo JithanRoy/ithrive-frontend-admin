@@ -1,0 +1,41 @@
+.educareSelectLabel {
+    @apply block text-xs font-medium text-black bg-red-500 relative;
+    span {
+        @apply absolute z-10 bg-white top-[-12px] left-3 m-0 px-2 rounded-t-lg;
+    }
+}
+
+.educareSelect {
+    @apply flex flex-col justify-center items-center #{!important};
+    &:global(.ant-select-focused > .ant-select-selector) {
+        @apply shadow-none outline-0 border-primary #{!important};
+    }
+
+    :global(.ant-select-selector) {
+        @apply rounded-sm bg-white min-h-10 #{!important};
+        &:global(.ant-select-lg) {
+            @apply min-h-12 #{!important};
+        }
+        :global(.ant-select-selection-search) {
+            @apply top-[unset] #{!important};
+        }
+    }
+}
+
+.educareSelectFree {
+    @apply flex flex-col justify-center items-center #{!important};
+    &:global(.ant-select-multiple) {
+        @apply mt-0 #{!important};
+    }
+
+    &:global(.ant-select-focused > .ant-select-selector) {
+        @apply shadow-none outline-0 border-primary #{!important};
+    }
+
+    :global(.ant-select-selector) {
+        @apply rounded-sm w-full min-h-10 #{!important};
+        &:global(.ant-select-lg) {
+            @apply min-h-12 #{!important};
+        }
+    }
+}

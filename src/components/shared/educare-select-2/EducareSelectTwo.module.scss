@@ -1,0 +1,32 @@
+.educareSelectLabel {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.educareSelect {
+    display: inline-block;
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.educareSelectFree {
+    /* custom styles for free type */
+}
+
+.optionList {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.optionItem {
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.optionItem:hover {
+    background-color: #f0f0f0;
+}

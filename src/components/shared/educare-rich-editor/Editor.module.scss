@@ -1,0 +1,6 @@
+.educareInputLabel {
+    @apply block text-xs font-medium text-black bg-red-500 relative;
+    span {
+        @apply absolute z-10 bg-white top-[-6px] left-3 m-0 px-2 rounded-t-lg;
+    }
+}

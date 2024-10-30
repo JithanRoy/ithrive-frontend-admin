@@ -1,0 +1,70 @@
+.educareAdminMenuPopupStyle {
+    :global(.ant-menu-item) {
+        @apply text-black #{!important};
+    }
+
+    :global(.ant-menu-item-selected) {
+        @apply text-primary bg-white #{!important};
+    }
+}
+
+.educareAdminMenuStyle {
+    @apply bg-white transition-all #{!important};
+
+    :global(.ant-layout-sider-children) {
+        @apply h-screen overflow-y-auto w-full overflow-x-hidden #{!important};
+    }
+
+    :global(.ant-menu) {
+        @apply text-sm bg-white text-black #{!important};
+        border-inline-end: unset !important;
+    }
+
+    :global(.ant-menu-item-selected) {
+        @apply text-primary bg-gray-50 border-l-4 border-primary rounded-sm rounded-r-sm #{!important};
+        margin-inline: 0 !important;
+    }
+
+    :global(.ant-menu-submenu-selected) {
+        @apply text-primary bg-gray-50 border-l-4 border-primary rounded-sm rounded-r-sm #{!important};
+        margin-inline: 0 !important;
+    }
+
+    :global(.ant-menu-item-selected > svg),
+    :global(.ant-menu-submenu-selected > .ant-menu-submenu-title > svg) {
+        @apply fill-primary #{!important};
+    }
+
+    :global(.ant-menu-item),
+    :global(.ant-menu-submenu-title) {
+        @apply pl-2 my-5 hover:text-primary #{!important};
+        svg {
+            @apply h-7 w-7 mt-[5px] text-gray-600 #{!important};
+        }
+    }
+
+    :global(.ant-menu-submenu-open) {
+        .ant-menu-item {
+            @apply pl-5 #{!important};
+        }
+
+        .ant-menu-item:last-child {
+            @apply mb-0 #{!important};
+        }
+    }
+
+    :global(.ant-menu-item-only-child.ant-menu-item) {
+        @apply m-0 pl-[40px] #{!important};
+    }
+
+    &:global(.ant-layout-sider-collapsed) {
+        @apply max-w-[80px] #{!important};
+    }
+
+    :global(.educare-menu-collapsed-icon-inside) {
+        @apply bg-primary absolute z-10 flex items-center justify-end text-xl mt-1 cursor-pointer text-black;
+        right: -10px;
+        border-radius: 50%;
+        top: 38%;
+    }
+}

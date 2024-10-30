@@ -1,0 +1,9 @@
+.educareTab {
+    :global(.ant-tabs-nav) {
+        @apply m-0 #{!important};
+    }
+
+    :global(.ant-tabs-nav::before) {
+        @apply border-b-0 #{!important};
+    }
+}

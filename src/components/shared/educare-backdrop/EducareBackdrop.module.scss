@@ -1,0 +1,9 @@
+.educareModelContentTransparent {
+    :global(.ant-modal-content) {
+        @apply bg-transparent shadow-none;
+
+        .ant-modal-body {
+            @apply bg-transparent shadow-none;
+        }
+    }
+}

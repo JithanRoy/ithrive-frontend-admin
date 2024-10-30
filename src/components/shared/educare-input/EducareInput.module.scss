@@ -1,0 +1,73 @@
+.educareInput {
+    &:global(.educare-search > .ant-input-wrapper > .ant-input-affix-wrapper) {
+        @apply rounded-sm rounded-r-none min-h-10 #{!important};
+        &.ant-input-lg {
+            @apply min-h-12 #{!important};
+        }
+        &:global(.ant-input-outlined:hover),
+        &:global(.ant-input-outlined:focus-within),
+        &:global(.ant-input-number:focus-within) {
+            @apply shadow-none bg-white border-primary #{!important};
+        }
+    }
+
+    @apply rounded-sm bg-white min-h-10 #{!important};
+
+    &:global(.ant-input-lg) {
+        @apply min-h-12 #{!important};
+    }
+    &:global(.ant-input-outlined:focus-within),
+    &:global(.ant-input-number:focus-within) {
+        @apply shadow-none bg-white border-primary #{!important};
+    }
+
+    &:global(.ant-input-outlined:hover),
+    &:global(.ant-input-number:hover) {
+        @apply bg-white border-primary #{!important};
+    }
+
+    :global(.ant-input-group),
+    :global(.ant-input-number-group) {
+        .ant-select-focused > .ant-select-selector {
+            @apply border-none #{!important};
+        }
+
+        :global(.ant-input-number-outlined),
+        :global(.ant-input-number-input-wrap) > input {
+            @apply rounded-sm bg-white min-h-10 #{!important};
+            &:global(.ant-input-lg) {
+                @apply min-h-12 #{!important};
+            }
+            &:global(.ant-input-outlined:focus-within),
+            &:global(.ant-input-number:focus-within) {
+                @apply shadow-none bg-white border-primary #{!important};
+            }
+
+            &:global(.ant-input-outlined:hover),
+            &:global(.ant-input-number:hover) {
+                @apply bg-white border-primary #{!important};
+            }
+        }
+
+        :global(.ant-input-group-addon),
+        :global(.ant-input-number-group-addon) {
+            @apply rounded-sm bg-white min-h-10 #{!important};
+            &:global(.ant-input-lg) {
+                @apply min-h-12 #{!important};
+            }
+            button {
+                @apply rounded-sm bg-white min-h-10 #{!important};
+                &:global(.ant-input-lg) {
+                    @apply min-h-12 #{!important};
+                }
+            }
+        }
+    }
+}
+
+.educareInputLabel {
+    @apply block text-xs font-medium text-black bg-red-500 relative;
+    span {
+        @apply absolute z-10 bg-white top-[-6px] left-3 m-0 px-2 rounded-t-lg;
+    }
+}
