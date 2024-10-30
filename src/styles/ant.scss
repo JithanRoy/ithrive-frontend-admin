@@ -1,0 +1,112 @@
+.custom-drawer .ant-drawer-close {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+}
+
+.ant-input-search > .ant-input-group > .ant-input-group-addon:last-child .ant-input-search-button {
+  border-start-start-radius: 0 !important;
+  border-end-start-radius: 0 !important;
+  border-start-end-radius: 0.25rem !important;
+  border-end-end-radius: 0.25rem !important;
+}
+
+.ant-select-item-option-selected {
+  .ant-select-item-option-content {
+    .customSelectOption-label {
+      .label-option {
+        color: #fff;
+        font-weight: normal;
+      }
+
+      svg {
+        color: #fff !important;
+      }
+    }
+  }
+}
+
+.ant-drawer-header {
+  @apply py-1 px-4 border-t-4 border-t-primary #{!important};
+}
+
+.ant-drawer-body {
+  @apply p-2 #{!important};
+}
+
+.ant-upload-wrapper {
+  .ant-upload-list {
+    @apply py-2;
+  }
+  .ant-upload-list-picture-card > .ant-upload-list-item-container > .ant-upload-list-item {
+    @apply border border-primary;
+    .ant-upload-list-item-actions {
+      @apply ml-2;
+    }
+  }
+}
+
+.ant-modal {
+  .ant-modal-content {
+    @apply p-0 #{!important};
+  }
+
+  .ant-modal-title {
+    @apply p-4 border-b #{!important};
+  }
+
+  .ant-modal-body {
+    @apply px-4 #{!important};
+  }
+
+  .ant-modal-footer {
+    @apply px-4 pb-4 #{!important};
+  }
+}
+
+.antd-no-hover-tree {
+  background-color: transparent !important;
+
+  .ant-tree-node-content-wrapper:hover,
+  .ant-tree-node-content-wrapper:focus {
+    cursor: default;
+    background-color: transparent !important;
+  }
+}
+
+.ant-pagination {
+  .ant-pagination-options {
+    position: absolute;
+    left: 0;
+
+    .ant-select-selector {
+      cursor: pointer !important;
+    }
+  }
+}
+
+.ant-pagination-options {
+  .ant-select-selector {
+    .ant-select-selection-search {
+      display: none !important;
+    }
+  }
+
+  .ant-select-arrow {
+    .anticon-search {
+      display: none !important;
+    }
+  }
+}
+
+.ant-transfer-list-content-item-remove {
+  @apply text-gray-400 hover:text-primary #{!important};
+}
+
+.ant-table-wrapper .ant-table-tbody .ant-table-row.ant-table-row-selected > .ant-table-cell {
+  background: transparent !important;
+}
+
+.ant-table-wrapper .ant-table {
+  scrollbar-color: unset;
+}

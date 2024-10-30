@@ -11,7 +11,7 @@ import { TbEye } from '@react-icons/all-files/tb/TbEye';
 import { TbEyeClosed } from '@react-icons/all-files/tb/TbEyeClosed';
 
 import styles from './EducareInput.module.scss';
-
+//
 export const EducareInputByType = React.forwardRef(function AntdInput(props: TEducareInputUi, ref) {
     if (props.type === 'password') {
         return (

@@ -10,7 +10,7 @@ import { UserInfoAtom } from '@store/UserInfoAtom';
 import AddSocialPostModal from '@components/app/social-post/AddSocialPost';
 import SocialPostTaxonomy from '@components/app/social-post/atoms/SocialPostTaxonomy';
 import EducareBackdrop from '@components/shared/educare-backdrop';
-import EducareButton from '@components/shared/educare-button';
+import IthriveButton from '@components/shared/iThrive-button';
 import {
     EducareDataTableLoadingBuilder,
     EducareDataTableLocalBuilder,
@@ -140,20 +140,20 @@ const ListSocialPost = () => {
                                         </div>
                                     }
                                     trigger="click">
-                                    <EducareButton className="flex gap-3 text-gray-500 h-[40px] justify-center items-center">
+                                    <IthriveButton className="flex gap-3 text-gray-500 h-[40px] justify-center items-center">
                                         <div className="pt-1">
                                             <IoFilter size={14} />
                                         </div>
                                         <span>Filters</span>
-                                    </EducareButton>
+                                    </IthriveButton>
                                 </Popover>
                                 {/*<EduCarePermissionWrapper module={PermissionModulesEnum.SOCIAL_POST} permissions={PermissionActionsEnum.CREATE}>*/}
-                                <EducareButton
+                                <IthriveButton
                                     className="h-9 col-span-1 lg:text-xs text-[10px]"
                                     variant="filled"
                                     onClick={() => addOrEditSocialPostState[1](true)}>
                                     Create Post
-                                </EducareButton>
+                                </IthriveButton>
                                 {/*</EduCarePermissionWrapper>*/}
                             </div>
                         </div>

@@ -5,7 +5,7 @@ import { Popover, Table } from 'antd';
 
 import { DeleteOutlined, EditOutlined } from '@ant-design/icons';
 import AddOrEditFaqDrawer from '@components/app/content-management/AddOrEditFaq';
-import EducareButton from '@components/shared/educare-button';
+import IthriveButton from 'src/components/shared/iThrive-button';
 import EducareConfirmDelete from '@components/shared/educare-confirm-delete';
 import {
     EducareDataTableLoadingBuilder,
@@ -77,9 +77,9 @@ const ListFaqsComponent = () => {
                     <div className="flex justify-between gap-2">
                         <h3 className="font-bold">FAQs</h3>
                         <EduCarePermissionWrapper module={PermissionModulesEnum.CONTENT_MANAGEMENT} permissions={PermissionActionsEnum.CREATE}>
-                            <EducareButton variant="filled" onClick={() => addOrEditFaqState[1](true)}>
+                            <IthriveButton variant="filled" onClick={() => addOrEditFaqState[1](true)}>
                                 Add FAQ
-                            </EducareButton>
+                            </IthriveButton>
                         </EduCarePermissionWrapper>
                     </div>
                     <div className="grid md:grid-cols-5 mt-2 gap-2">
@@ -124,7 +124,7 @@ const ListFaqsComponent = () => {
                                         <EduCarePermissionWrapper
                                             module={PermissionModulesEnum.CONTENT_MANAGEMENT}
                                             permissions={PermissionActionsEnum.UPDATE}>
-                                            <EducareButton
+                                            <IthriveButton
                                                 type="text"
                                                 size="small"
                                                 className="!justify-start mr-5"
@@ -134,7 +134,7 @@ const ListFaqsComponent = () => {
                                                     addOrEditFaqState[1](record.id);
                                                 }}>
                                                 Edit
-                                            </EducareButton>
+                                            </IthriveButton>
                                         </EduCarePermissionWrapper>
                                         <EduCarePermissionWrapper
                                             module={PermissionModulesEnum.CONTENT_MANAGEMENT}
@@ -151,7 +151,7 @@ const ListFaqsComponent = () => {
                                                         url: record.id,
                                                     });
                                                 }}>
-                                                <EducareButton
+                                                <IthriveButton
                                                     type="text"
                                                     size="small"
                                                     className="text-red-500 !justify-start"
@@ -159,12 +159,12 @@ const ListFaqsComponent = () => {
                                                     loading={deleteFaqLoading}
                                                     icon={<DeleteOutlined />}>
                                                     Delete
-                                                </EducareButton>
+                                                </IthriveButton>
                                             </EducareConfirmDelete>
                                         </EduCarePermissionWrapper>
                                     </div>
                                 }>
-                                {!canDelete && !canEdit ? <div></div> : <EducareButton type="text" icon={<BsThreeDotsVertical />} />}
+                                {!canDelete && !canEdit ? <div></div> : <IthriveButton type="text" icon={<BsThreeDotsVertical />} />}
                             </Popover>
                         </div>
                     ),

@@ -6,7 +6,7 @@ import { Form, Modal } from 'antd';
 
 import { z } from 'zod';
 
-import EducareButton from '@components/shared/educare-button';
+import IthriveButton from 'src/components/shared/iThrive-button';
 import EducareCheckbox from '@components/shared/educare-checkbox';
 import EducareInput from '@components/shared/educare-input';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -119,12 +119,12 @@ function ReasonRejectionComponent({ state, onReject }: EducareRejectionProps) {
                     );
                 })}
                 <div className="grid grid-cols-2 items-center justify-around md:gap-10 gap-2 md:px-20 px-2 my-5">
-                    <EducareButton size="large" variant="reset" htmlType="reset" onClick={() => setRelatedId('')}>
+                    <IthriveButton size="large" variant="reset" htmlType="reset" onClick={() => setRelatedId('')}>
                         Cancel
-                    </EducareButton>
-                    <EducareButton size="large" variant="filled" htmlType="submit">
+                    </IthriveButton>
+                    <IthriveButton size="large" variant="filled" htmlType="submit">
                         Send
-                    </EducareButton>
+                    </IthriveButton>
                 </div>
             </div>
         </Form>

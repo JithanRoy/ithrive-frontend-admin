@@ -4,7 +4,7 @@ import type { GetProp, UploadFile, UploadProps } from 'antd';
 import { Image, Upload } from 'antd';
 import type { DraggerProps } from 'antd/lib/upload/Dragger';
 
-import EducareButton from '@components/shared/educare-button';
+import IthriveButton from 'src/components/shared/iThrive-button';
 import EducareMessageAlert from '@components/shared/educare-message-alert';
 import RequestApi from '@library/apis/request.api';
 import UploadRequestApi from '@library/apis/upload-request.api';
@@ -134,9 +134,9 @@ const EducareUpload = ({
                 onChange={onChange}
                 onPreview={handlePreview}>
                 <div className="grid place-items-center gap-2">
-                    <EducareButton disabled={fileLength === maxCount} variant="filled">
+                    <IthriveButton disabled={fileLength === maxCount} variant="filled">
                         {buttonText}
-                    </EducareButton>
+                    </IthriveButton>
                     <p className="ant-upload-hint">{instructionText}</p>
                 </div>
             </Upload.Dragger>

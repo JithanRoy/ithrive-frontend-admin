@@ -1,6 +1,6 @@
 import type { Gradient } from './types/shared';
 
-export const APP_NAME = 'StuCommunify';
+export const APP_NAME = 'IThrive';
 export const DEFAULT_ROUTE = '/';
 export const REFRESH_TOKEN_ENABLED = 'refresh_token_enabled';
 

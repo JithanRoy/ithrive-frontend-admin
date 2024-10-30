@@ -24,7 +24,7 @@ import { Modal } from 'antd';
 
 import { useWindowSize } from '@library/hooks';
 
-import EducareButton from '../educare-button';
+import IthriveButton from '../iThrive-button';
 import { EducareInputUi } from '../educare-input';
 
 export type TEducareShareDetail = {
@@ -180,13 +180,13 @@ function Share({ state, onShare }: EducareShareProps) {
                         <EducareInputUi type="text" size="large" label="" onChange={() => {}} name="link" value={currentUrl} />
                     </div>
 
-                    <EducareButton
+                    <IthriveButton
                         onClick={copyToClipboard}
                         className="bg-primary text-white pb-2 h-full"
                         variant={isCopied ? 'filled' : 'reset'}
                         type="default">
                         {isCopied ? `Copied !` : `Copy`}
-                    </EducareButton>
+                    </IthriveButton>
                 </div>
             </div>
         </>

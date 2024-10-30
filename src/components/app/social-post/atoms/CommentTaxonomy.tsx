@@ -28,7 +28,7 @@ import { FaComment } from '@react-icons/all-files/fa6/FaComment';
 import { MdOutlineStar } from '@react-icons/all-files/md/MdOutlineStar';
 import { MdOutlineStarBorder } from '@react-icons/all-files/md/MdOutlineStarBorder';
 
-import EducareButton from '../../../shared/educare-button';
+import IthriveButton from '../../../shared/iThrive-button';
 import EducareImage from '../../../shared/educare-image';
 import EducareInput from '../../../shared/educare-input';
 
@@ -275,7 +275,7 @@ const CommentTaxonomy = ({ comment, editable, deletable, onDelete }: CommentProp
                                     content={
                                         <div className="flex flex-col gap-2">
                                             {editable && (
-                                                <EducareButton
+                                                <IthriveButton
                                                     type="text"
                                                     size="small"
                                                     className="!justify-start mr-5"
@@ -283,25 +283,25 @@ const CommentTaxonomy = ({ comment, editable, deletable, onDelete }: CommentProp
                                                     loading={onEditCommentLoading}
                                                     onClick={onEditCommentClick}>
                                                     Edit
-                                                </EducareButton>
+                                                </IthriveButton>
                                             )}
                                             {deletable && (
                                                 <EducareConfirmDelete
                                                     title="Delete Comment"
                                                     subtitle="Are you sure to delete this comment?"
                                                     onDelete={onDelete}>
-                                                    <EducareButton
+                                                    <IthriveButton
                                                         type="text"
                                                         size="small"
                                                         className="text-red-500 !justify-start"
                                                         icon={<DeleteOutlined />}>
                                                         Delete
-                                                    </EducareButton>
+                                                    </IthriveButton>
                                                 </EducareConfirmDelete>
                                             )}
                                         </div>
                                     }>
-                                    <EducareButton type="text" icon={<BsThreeDotsVertical />} />
+                                    <IthriveButton type="text" icon={<BsThreeDotsVertical />} />
                                 </Popover>
                             )}
                         </div>
@@ -313,21 +313,21 @@ const CommentTaxonomy = ({ comment, editable, deletable, onDelete }: CommentProp
                             <div className="relative w-full gap-2">
                                 <EducareInput type="text" hookForm={hookForm2} name="comment" className="w-full rounded-xl" />
                                 <div className="flex justify-end absolute top-[30%] right-3 ">
-                                    <EducareButton
+                                    <IthriveButton
                                         className="self-end border-none rounded-lg"
                                         size="small"
                                         htmlType="submit"
                                         variant="bordered"
                                         loading={onEditCommentLoading}>
                                         <SendOutlined className="text-[#FF8743] text-xl" />
-                                    </EducareButton>
+                                    </IthriveButton>
                                 </div>
                             </div>
                         </Form>
                     )}
                     <div className="flex items-center gap-5 text-sm text-gray-500">
                         <Space>
-                            <EducareButton
+                            <IthriveButton
                                 size="small"
                                 type="text"
                                 className="text-red-500"
@@ -341,10 +341,10 @@ const CommentTaxonomy = ({ comment, editable, deletable, onDelete }: CommentProp
                                     });
                                 }}>
                                 <span>{likes || 0}</span>
-                            </EducareButton>
+                            </IthriveButton>
                         </Space>
                         <Space>
-                            <EducareButton
+                            <IthriveButton
                                 size="small"
                                 type="text"
                                 className="text-blue-500"
@@ -353,7 +353,7 @@ const CommentTaxonomy = ({ comment, editable, deletable, onDelete }: CommentProp
                                     setReplyOpen(!replyOpen);
                                 }}>
                                 <span>{replys || 0}</span>
-                            </EducareButton>
+                            </IthriveButton>
                         </Space>
                     </div>
                     {replyOpen && (
@@ -369,14 +369,14 @@ const CommentTaxonomy = ({ comment, editable, deletable, onDelete }: CommentProp
                                         className="w-full rounded-xl"
                                     />
                                     <div className="flex justify-end absolute top-[30%] right-3 ">
-                                        <EducareButton
+                                        <IthriveButton
                                             className="self-end border-none rounded-lg"
                                             size="small"
                                             htmlType="submit"
                                             variant="bordered"
                                             loading={onCommentLoading}>
                                             <SendOutlined className="text-[#FF8743] text-xl" />
-                                        </EducareButton>
+                                        </IthriveButton>
                                     </div>
                                 </div>
                             </Form>
@@ -401,11 +401,11 @@ const CommentTaxonomy = ({ comment, editable, deletable, onDelete }: CommentProp
                         {!reachedEnd && Array.isArray(commentReply) && (
                             <div>
                                 {apiLoading ? (
-                                    <EducareButton variant="reset" className="text-center border-none" loading></EducareButton>
+                                    <IthriveButton variant="reset" className="text-center border-none" loading></IthriveButton>
                                 ) : (
-                                    <EducareButton variant="reset" className="text-center border-none" onClick={handleSeeMore}>
+                                    <IthriveButton variant="reset" className="text-center border-none" onClick={handleSeeMore}>
                                         <div>load more replies</div>
-                                    </EducareButton>
+                                    </IthriveButton>
                                 )}
                             </div>
                         )}

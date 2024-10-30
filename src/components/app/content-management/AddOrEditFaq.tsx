@@ -4,7 +4,7 @@ import { useRequest } from 'ahooks';
 
 import { Drawer, Form } from 'antd';
 
-import EducareButton from '@components/shared/educare-button';
+import IthriveButton from 'src/components/shared/iThrive-button';
 import EducareInput from '@components/shared/educare-input';
 import EducareMessageAlert from '@components/shared/educare-message-alert';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -101,12 +101,12 @@ const FormComponent = ({ type, onClose, editStateId, onValue }: AddOrEditStateFo
                 />
             </div>
             <div className="flex items-center justify-center gap-5 py-5">
-                <EducareButton variant="reset" htmlType="reset" disabled={loading} onClick={() => onCancel('cancel')}>
+                <IthriveButton variant="reset" htmlType="reset" disabled={loading} onClick={() => onCancel('cancel')}>
                     Cancel
-                </EducareButton>
-                <EducareButton variant="filled" loading={loading} htmlType="submit">
+                </IthriveButton>
+                <IthriveButton variant="filled" loading={loading} htmlType="submit">
                     Submit
-                </EducareButton>
+                </IthriveButton>
             </div>
         </Form>
     );
@@ -124,7 +124,7 @@ const AddOrEditFaqDrawer = (props: AddOrEditStateProps) => {
             open={isOpen}
             width={isSm ? '95vw' : '75vw'}
             closeIcon={null}
-            extra={<EducareButton type="link" size="large" icon={<MdOutlineClose />} onClick={() => onClose('cancel')} />}
+            extra={<IthriveButton type="link" size="large" icon={<MdOutlineClose />} onClick={() => onClose('cancel')} />}
             onClose={() => onClose('cancel')}
             title={type === 'create' ? 'New FAQ' : 'Edit FAQ'}>
             {isOpen && <FormComponent type={type} editStateId={editStateId} onClose={onClose} onValue={onValue} />}

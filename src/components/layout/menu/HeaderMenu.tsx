@@ -8,7 +8,7 @@ import { useRecoilValue, useResetRecoilState } from 'recoil';
 import { UserInfoAtom } from '@store/UserInfoAtom';
 
 import { DownOutlined } from '@ant-design/icons';
-import EducareButton from '@components/shared/educare-button';
+import IthriveButton from 'src/components/shared/iThrive-button';
 import EducareImage from '@components/shared/educare-image';
 import { IsomorphicLocalStorage } from '@library/isomorphic-local-storage';
 
@@ -41,13 +41,13 @@ export default function HeaderMenuComponent() {
                     <div className="p-2 rounded-sm bg-white shadow-xl">
                         <div className="flex flex-col gap-2">
                             <div className="text-black text-center my-2 border-b pb-2">{userInfo?.name}</div>
-                            <EducareButton type="link" className="text-black" htmlType="button" onClick={onLogout}>
+                            <IthriveButton type="link" className="text-black" htmlType="button" onClick={onLogout}>
                                 Logout
-                            </EducareButton>
+                            </IthriveButton>
                         </div>
                     </div>
                 )}>
-                <EducareButton type="text" icon={<DownOutlined className="text-xl" />} />
+                <IthriveButton type="text" icon={<DownOutlined className="text-xl" />} />
             </Dropdown>
         </div>
     );

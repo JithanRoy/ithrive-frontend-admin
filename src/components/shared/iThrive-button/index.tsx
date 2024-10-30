@@ -5,9 +5,9 @@ import type { ButtonProps } from 'antd/lib/button/button';
 
 import classNames from 'classnames';
 
-type EducareButtonProps = ButtonProps & { variant?: 'filled' | 'bordered' | 'reset'; children?: ReactNode };
+type IthriveButtonProps = ButtonProps & { variant?: 'filled' | 'bordered' | 'reset'; children?: ReactNode };
 
-const EducareButton = ({ variant, ...props }: EducareButtonProps) => {
+const IthriveButton = ({ variant, ...props }: IthriveButtonProps) => {
     props.className = classNames(
         'flex justify-center place-items-center rounded-none',
         {
@@ -33,4 +33,4 @@ const EducareButton = ({ variant, ...props }: EducareButtonProps) => {
     return <Button {...props} />;
 };
 
-export default EducareButton;
+export default IthriveButton;

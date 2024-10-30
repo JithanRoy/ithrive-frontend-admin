@@ -4,17 +4,19 @@
 /node_modules
 /.pnp
 .pnp.js
-.yarn/install-state.gz
+yarn-error.log
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
 
 # testing
 /coverage
 
-# next.js
-/.next/
-/out/
-
 # production
-/build
+/.next/
+/out
+/.exports
+/standalone
 
 # misc
 .DS_Store
@@ -24,13 +26,31 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.pnpm-debug.log*
 
 # local env files
 .env*.local
+process.json
 
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
+
+# idea
+.idea
+.vscode
+
+/.env
+/.env.production
+
+# Auto Generated PWA files
+**/public/sw.js
+**/public/workbox-*.js
+**/public/worker-*.js
+**/public/sw.js.map
+**/public/workbox-*.js.map
+**/public/worker-*.js.map
+
+certificates

@@ -21,7 +21,7 @@ import { BsThreeDotsVertical } from '@react-icons/all-files/bs/BsThreeDotsVertic
 import { MdOutlineStar } from '@react-icons/all-files/md/MdOutlineStar';
 import { MdOutlineStarBorder } from '@react-icons/all-files/md/MdOutlineStarBorder';
 
-import EducareButton from '../../../shared/educare-button';
+import IthriveButton from '../../../shared/iThrive-button';
 import EducareImage from '../../../shared/educare-image';
 
 type Props = {
@@ -149,7 +149,7 @@ const ReplyItem = ({ reply, editable, deletable, onDelete }: Props) => {
                                         content={
                                             <div className="flex flex-col gap-2">
                                                 {editable && (
-                                                    <EducareButton
+                                                    <IthriveButton
                                                         type="text"
                                                         size="small"
                                                         className="!justify-start mr-5"
@@ -157,25 +157,25 @@ const ReplyItem = ({ reply, editable, deletable, onDelete }: Props) => {
                                                         loading={onEditCommentLoading}
                                                         onClick={onEditCommentClick}>
                                                         Edit
-                                                    </EducareButton>
+                                                    </IthriveButton>
                                                 )}
                                                 {deletable && (
                                                     <EducareConfirmDelete
                                                         title="Delete Comment"
                                                         subtitle="Are you sure to delete this comment?"
                                                         onDelete={onDelete}>
-                                                        <EducareButton
+                                                        <IthriveButton
                                                             type="text"
                                                             size="small"
                                                             className="text-red-500 !justify-start"
                                                             icon={<DeleteOutlined />}>
                                                             Delete
-                                                        </EducareButton>
+                                                        </IthriveButton>
                                                     </EducareConfirmDelete>
                                                 )}
                                             </div>
                                         }>
-                                        <EducareButton type="text" icon={<BsThreeDotsVertical />} />
+                                        <IthriveButton type="text" icon={<BsThreeDotsVertical />} />
                                     </Popover>
                                 )}
                             </div>
@@ -189,14 +189,14 @@ const ReplyItem = ({ reply, editable, deletable, onDelete }: Props) => {
                         <div className="gap-2 w-full relative">
                             <EducareInput type="text" hookForm={hookForm} name="comment" className="w-full rounded-xl" />
                             <div className="flex justify-end absolute top-[30%] right-3 ">
-                                <EducareButton
+                                <IthriveButton
                                     className="self-end rounded-lg border-none"
                                     size="small"
                                     htmlType="submit"
                                     variant="bordered"
                                     loading={onEditCommentLoading}>
                                     <SendOutlined className="text-[#FF8743] text-xl" />
-                                </EducareButton>
+                                </IthriveButton>
                             </div>
                         </div>
                     </Form>
@@ -204,7 +204,7 @@ const ReplyItem = ({ reply, editable, deletable, onDelete }: Props) => {
             </div>
             <div className="text-gray-500 ml-3">
                 <Space>
-                    <EducareButton
+                    <IthriveButton
                         size="small"
                         type="text"
                         className="text-red-500"
@@ -219,7 +219,7 @@ const ReplyItem = ({ reply, editable, deletable, onDelete }: Props) => {
                             });
                         }}>
                         <span>{likes}</span>
-                    </EducareButton>
+                    </IthriveButton>
                 </Space>
             </div>
         </div>

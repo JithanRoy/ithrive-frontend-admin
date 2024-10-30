@@ -1,0 +1,12 @@
+.eslintrc.js
+next.config.mjs
+postcss.config.js
+lint-staged.config.js
+
+.next
+out
+standalone
+.husky
+sw.js
+workbox*.js
+*d.ts

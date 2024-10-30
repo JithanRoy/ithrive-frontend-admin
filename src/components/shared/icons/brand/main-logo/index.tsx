@@ -8,5 +8,5 @@ type Props = {
     style?: React.CSSProperties;
 };
 export default function MainLogo(props: Props) {
-    return <Image src="/images/logo-m.png" preview={false} alt="educare-main-log" className="w-full" />;
+    return <Image src="/images/Thrive_Secondary_CMYK.png" preview={false} alt="iThrive-main-logo" className="px-5" />;
 }

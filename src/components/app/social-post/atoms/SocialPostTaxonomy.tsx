@@ -12,7 +12,7 @@ import { useRecoilValue } from 'recoil';
 import { DeleteOutlined, EditOutlined, SendOutlined } from '@ant-design/icons';
 import CommentTaxonomy from '@components/app/social-post/atoms/CommentTaxonomy';
 import EducareBackdrop from '@components/shared/educare-backdrop';
-import EducareButton from '@components/shared/educare-button';
+import IthriveButton from '@components/shared/iThrive-button';
 import EducareConfirmDelete from '@components/shared/educare-confirm-delete';
 import EducareImage from '@components/shared/educare-image';
 import EducareInput from '@components/shared/educare-input';
@@ -430,14 +430,14 @@ const SocialPostTaxonomy = (props: SocialPostTaxonomyProps) => {
                             <div className="flex flex-col gap-2">
                                 {props?.editable && (
                                     // <EduCarePermissionWrapper module={PermissionModulesEnum.SOCIAL_POST} permissions={PermissionActionsEnum.UPDATE}>
-                                    <EducareButton
+                                    <IthriveButton
                                         type="text"
                                         size="small"
                                         className="!justify-start mr-5"
                                         icon={<EditOutlined />}
                                         onClick={props?.onEdit}>
                                         Edit
-                                    </EducareButton>
+                                    </IthriveButton>
                                 )}
                                 {props?.deletable && (
                                     <EducareConfirmDelete
@@ -447,15 +447,15 @@ const SocialPostTaxonomy = (props: SocialPostTaxonomyProps) => {
                                         {/*<EduCarePermissionWrapper*/}
                                         {/*    module={PermissionModulesEnum.SOCIAL_POST}*/}
                                         {/*    permissions={PermissionActionsEnum.DELETE}>*/}
-                                        <EducareButton type="text" size="small" className="text-red-500 !justify-start" icon={<DeleteOutlined />}>
+                                        <IthriveButton type="text" size="small" className="text-red-500 !justify-start" icon={<DeleteOutlined />}>
                                             Delete
-                                        </EducareButton>
+                                        </IthriveButton>
                                         {/*</EduCarePermissionWrapper>*/}
                                     </EducareConfirmDelete>
                                 )}
                             </div>
                         }>
-                        {props.user.userType === UserTypeEnum.ADMIN && <EducareButton type="text" icon={<BsThreeDotsVertical />} />}
+                        {props.user.userType === UserTypeEnum.ADMIN && <IthriveButton type="text" icon={<BsThreeDotsVertical />} />}
                     </Popover>
                 )}
             </div>
@@ -534,7 +534,7 @@ const SocialPostTaxonomy = (props: SocialPostTaxonomyProps) => {
                 <>
                     <div className="flex items-center text-gray-500 text-sm gap-5">
                         <Space>
-                            <EducareButton
+                            <IthriveButton
                                 size="small"
                                 type="text"
                                 className="text-red-500"
@@ -556,10 +556,10 @@ const SocialPostTaxonomy = (props: SocialPostTaxonomyProps) => {
                                     });
                                 }}>
                                 <span>{likes}</span>
-                            </EducareButton>
+                            </IthriveButton>
                         </Space>
                         <Space>
-                            <EducareButton
+                            <IthriveButton
                                 size="small"
                                 type="text"
                                 className="text-blue-500"
@@ -569,10 +569,10 @@ const SocialPostTaxonomy = (props: SocialPostTaxonomyProps) => {
                                     setCommentOpen(o => !o);
                                 }}>
                                 <span>{commentCount}</span>
-                            </EducareButton>
+                            </IthriveButton>
                         </Space>
                         <Space>
-                            <EducareButton
+                            <IthriveButton
                                 size="small"
                                 type="text"
                                 className="text-violet-500"
@@ -588,7 +588,7 @@ const SocialPostTaxonomy = (props: SocialPostTaxonomyProps) => {
                                     });
                                 }}>
                                 <span>{props?.shares}</span>
-                            </EducareButton>
+                            </IthriveButton>
                         </Space>
                     </div>
                     {commentOpen && (
@@ -606,14 +606,14 @@ const SocialPostTaxonomy = (props: SocialPostTaxonomyProps) => {
                                             className="w-full rounded-xl"
                                         />
                                         <div className="flex justify-end absolute top-[30%] right-3 ">
-                                            <EducareButton
+                                            <IthriveButton
                                                 className="self-end rounded-lg border-none"
                                                 size="small"
                                                 htmlType="submit"
                                                 variant="bordered"
                                                 loading={onCommentLoading}>
                                                 <SendOutlined className="text-[#FF8743] text-xl" />
-                                            </EducareButton>
+                                            </IthriveButton>
                                         </div>
                                     </div>
                                 </Form>
@@ -652,10 +652,10 @@ const SocialPostTaxonomy = (props: SocialPostTaxonomyProps) => {
                                         ))}
                                         <div ref={ref} className="flex justify-center items-center">
                                             {!reachedEnd && (
-                                                <EducareButton
+                                                <IthriveButton
                                                     variant="reset"
                                                     className="border-none text-center"
-                                                    loading={apiLoading}></EducareButton>
+                                                    loading={apiLoading}></IthriveButton>
                                             )}
                                         </div>
                                     </SizedBox>

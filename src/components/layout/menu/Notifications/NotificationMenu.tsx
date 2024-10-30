@@ -6,7 +6,7 @@ import { useRequest } from 'ahooks';
 import { Badge, Drawer } from 'antd';
 import type { DrawerProps } from 'antd/lib';
 
-import EducareButton from '@components/shared/educare-button';
+import IthriveButton from 'src/components/shared/iThrive-button';
 import { EducareDataTablePaginationProps } from '@components/shared/educare-datatable';
 import RequestApi from '@library/apis/request.api';
 import { useRequestPagination } from '@library/apis/request-pagination.api';
@@ -148,7 +148,7 @@ export default function NotificationMenuComponent() {
                 </Badge>
             </div>
             <Drawer title="Notifications" className="custom-drawer relative" size={size} onClose={onClose} open={openNotification}>
-                <EducareButton
+                <IthriveButton
                     size="small"
                     className="text-white absolute top-1.5 right-10 p-3 h-3  border-0 shadow-none disabled:bg-primary"
                     icon={<MdOutlinePlaylistAddCheck size={20} />}
@@ -163,7 +163,7 @@ export default function NotificationMenuComponent() {
                         });
                     }}>
                     Mark all as read
-                </EducareButton>
+                </IthriveButton>
 
                 {notifications.map((item: TNotificationResponse) => (
                     <NotificationCard
@@ -176,7 +176,7 @@ export default function NotificationMenuComponent() {
                 ))}
                 <div ref={ref} className="flex justify-center items-center">
                     {(apiNotificationData?.metadata?.totalPage as number) > currentPage && (
-                        <EducareButton variant="reset" className="border-none text-center" loading={apiLoading}></EducareButton>
+                        <IthriveButton variant="reset" className="border-none text-center" loading={apiLoading}></IthriveButton>
                     )}
                 </div>
             </Drawer>

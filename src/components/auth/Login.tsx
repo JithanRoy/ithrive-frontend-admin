@@ -9,7 +9,7 @@ import { useSetRecoilState } from 'recoil';
 import { permissionsState } from '@store/permissionAtom';
 import { UserInfoAtom } from '@store/UserInfoAtom';
 
-import EducareButton from '@components/shared/educare-button';
+import IthriveButton from 'src/components/shared/iThrive-button';
 import EducareInput from '@components/shared/educare-input';
 import EducareMessageAlert from '@components/shared/educare-message-alert';
 import MainLogo from '@components/shared/icons/brand/main-logo';
@@ -35,7 +35,6 @@ const LoginComponent = () => {
             userType: UserTypeEnum.ADMIN,
         },
     });
-
 
     const [rememberMe, setRememberMe] = useLocalStorageState<boolean>(REFRESH_TOKEN_ENABLED, {
         defaultValue: false,
@@ -72,14 +71,14 @@ const LoginComponent = () => {
                 <h3 className="text-sm">Please log in to access your account.</h3>
             </div>
             <Form className="max-w-sm mx-auto grid gap-5" onFinish={hookForm.handleSubmit(onLogin)}>
-                <EducareInput hookForm={hookForm} name="email" type="email" placeholder="admin@communify.com" label="Email" />
+                <EducareInput hookForm={hookForm} name="email" type="email" placeholder="admin@ithrive.com" label="Email" />
                 <EducareInput hookForm={hookForm} name="password" type="password" placeholder="******" label="Password" />
                 <Checkbox name="remember" checked={rememberMe === false} onClick={() => setRememberMe(p => !p)}>
                     Remember me
                 </Checkbox>
-                <EducareButton size="large" variant="filled" htmlType="submit" loading={onLoginLoading}>
+                <IthriveButton size="large" variant="filled" htmlType="submit" loading={onLoginLoading}>
                     Log in
-                </EducareButton>
+                </IthriveButton>
             </Form>
         </div>
     );

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import { Result } from 'antd';
 
-import EducareButton from '@components/shared/educare-button';
+import IthriveButton from 'src/components/shared/iThrive-button';
 import VoidLogo from '@components/shared/icons/void';
 import { DEFAULT_ROUTE } from '@library/const';
 
@@ -17,7 +17,7 @@ function ErrorCode({ statusCode = 404, statusText = 'Sorry, the page you visited
                 subTitle={<span className="text-black">{statusText}</span>}
                 extra={
                     <Link href={DEFAULT_ROUTE} passHref as={DEFAULT_ROUTE} className="flex justify-center">
-                        <EducareButton variant="bordered">Back Home</EducareButton>
+                        <IthriveButton variant="bordered">Back Home</IthriveButton>
                     </Link>
                 }
             />

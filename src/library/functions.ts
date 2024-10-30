@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import tailwindConfig from 'tailwind.config.js';
+import tailwindConfig from '../../tailwind.config';
 import resolveConfig from 'tailwindcss/resolveConfig';
 
 import { regexObjectResolver } from '@library/regexes';

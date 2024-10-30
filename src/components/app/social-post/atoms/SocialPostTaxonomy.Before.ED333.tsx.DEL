@@ -6,7 +6,7 @@ import { Card, Form, Popover, Skeleton, Space } from 'antd';
 
 import { DeleteOutlined, EditOutlined, SendOutlined } from '@ant-design/icons';
 import CommentTaxonomy from '@components/app/social-post/atoms/CommentTaxonomy';
-import EducareButton from '@components/shared/educare-button';
+import IthriveButton from '@components/shared/educare-button';
 import EducareConfirmDelete from '@components/shared/educare-confirm-delete';
 import EducareImage from '@components/shared/educare-image';
 import EducareInput from '@components/shared/educare-input';

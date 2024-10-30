@@ -2,7 +2,7 @@
 import AppAuthHOC from '@components/layout/AuthHOC';
 
 import NotificationMenuComponent from '@components/layout/menu/Notifications/NotificationMenu';
-import EducareButton from '@components/shared/educare-button';
+import IthriveButton from 'src/components/shared/iThrive-button';
 import MainLogo from '@components/shared/icons/brand/main-logo';
 import MainLogoOnly from '@components/shared/icons/brand/main-logo-only';
 import ContentManagementLogo from '@components/shared/icons/content-management';
@@ -233,7 +233,7 @@ const AppLayoutComponent = ({ children, activeMenu, showSidebar = true, showTopb
                         <Layout.Header className="!p-0">
                             <div className="flex bg-white justify-between items-center gap-2 px-2 shadow-sm overflow-auto">
                                 <div className="flex gap-2">
-                                    <EducareButton
+                                    <IthriveButton
                                         className="md:hidden"
                                         type="text"
                                         size="small"

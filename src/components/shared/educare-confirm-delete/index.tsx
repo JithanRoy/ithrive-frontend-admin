@@ -4,7 +4,7 @@ import { useMemoizedFn } from 'ahooks';
 import { Divider, Modal } from 'antd';
 
 import { DeleteOutlined } from '@ant-design/icons';
-import EducareButton from '@components/shared/educare-button';
+import IthriveButton from 'src/components/shared/iThrive-button';
 import { useWindowSize } from '@library/hooks';
 
 type EducareConfirmDeleteProps = {
@@ -37,10 +37,10 @@ const EducareConfirmDelete = (props: EducareConfirmDeleteProps) => {
                     <h4>{props.subtitle}</h4>
                     <Divider />
                     <div className="flex justify-center gap-5">
-                        <EducareButton variant="bordered" onClick={onClose} disabled={props.loading}>
+                        <IthriveButton variant="bordered" onClick={onClose} disabled={props.loading}>
                             Cancel
-                        </EducareButton>
-                        <EducareButton
+                        </IthriveButton>
+                        <IthriveButton
                             variant="filled"
                             loading={props.loading}
                             onClick={() => {
@@ -48,7 +48,7 @@ const EducareConfirmDelete = (props: EducareConfirmDeleteProps) => {
                                 onClose();
                             }}>
                             Delete
-                        </EducareButton>
+                        </IthriveButton>
                     </div>
                 </div>
             </Modal>

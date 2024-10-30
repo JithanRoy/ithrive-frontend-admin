@@ -10,7 +10,7 @@ import { useRecoilValue } from 'recoil';
 import { UserInfoAtom } from '@store/UserInfoAtom';
 
 import SocialPostTaxonomy from '@components/app/social-post/atoms/SocialPostTaxonomy';
-import EducareButton from '@components/shared/educare-button';
+import IthriveButton from '@components/shared/iThrive-button';
 import EducareInput from '@components/shared/educare-input';
 import EducareMessageAlert from '@components/shared/educare-message-alert';
 import EducareRichEditor from '@components/shared/educare-rich-editor';
@@ -260,12 +260,12 @@ const FormComponent = ({
                 />
             )}
             <div className="flex items-center justify-center gap-5 mt-5">
-                <EducareButton variant="reset" htmlType="reset" disabled={loading} onClick={() => onCancel('cancel')}>
+                <IthriveButton variant="reset" htmlType="reset" disabled={loading} onClick={() => onCancel('cancel')}>
                     Cancel
-                </EducareButton>
-                <EducareButton variant="filled" loading={loading} htmlType="submit">
+                </IthriveButton>
+                <IthriveButton variant="filled" loading={loading} htmlType="submit">
                     {currentScreen === 'write' ? 'Preview' : 'Post'}
-                </EducareButton>
+                </IthriveButton>
             </div>
         </Form>
     );
@@ -291,7 +291,7 @@ const AddSocialPostModal = (props: AddOrEditStateProps) => {
             closeIcon={null}
             extra={
                 currentScreen === 'write' ? (
-                    <EducareButton
+                    <IthriveButton
                         type="link"
                         icon={<MdOutlineClose size={20} />}
                         onClick={() => {
@@ -299,9 +299,9 @@ const AddSocialPostModal = (props: AddOrEditStateProps) => {
                         }}
                     />
                 ) : (
-                    <EducareButton type="text" className="text-primary" onClick={() => setCurrentScreen('write')}>
+                    <IthriveButton type="text" className="text-primary" onClick={() => setCurrentScreen('write')}>
                         Edit Post
-                    </EducareButton>
+                    </IthriveButton>
                 )
             }
             title={
